@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProcessesActivity"
+    android:background="@color/colorPrimaryDark">
+    <TextView
+        android:id="@+id/processes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Processes"
+        android:textColor="@color/colorNumber"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/chose_process"
+        android:layout_below="@+id/processes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:padding="20dp"
+            android:orientation="horizontal">
+          <LinearLayout
+              android:layout_width="120dp"
+              android:layout_height="200dp"
+              android:layout_weight="1"
+              android:weightSum="2"
+              android:padding="25dp"
+              android:orientation="vertical">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:gravity="center_horizontal"
+                  android:text="Deposit"
+                  android:textColor="@color/colorNumber"
+                  android:textSize="20dp"
+                  android:textStyle="bold"/>
+              <com.airbnb.lottie.LottieAnimationView
+                  android:id="@+id/depositProcess"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  app:lottie_rawRes="@raw/deposit"
+                  app:lottie_autoPlay="true"
+                  app:lottie_loop="true"
+                  app:lottie_speed="3"
+                  android:clickable="true"/>
+          </LinearLayout>
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:padding="25dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="Withdrawal"
+                    android:textColor="@color/colorNumber"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/withdrawalProcess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:lottie_rawRes="@raw/withdrawal"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    android:clickable="true"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView_enterNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chose_process"
+        android:text="Please enter number you needed"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorNumber"
+        android:layout_margin="20dp"
+        android:visibility="invisible"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/numberNeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_enterNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_horizontal"
+        android:hint="Number you needed"
+        android:visibility="invisible">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/numberNeed_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btn_doProcess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberNeed"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/effect_button_sinup"
+        android:text="Submit"
+        style="@android:style/Theme.Translucent"
+        android:visibility="invisible"
+        />
+    <Button
+        android:id="@+id/btn_endProcess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:text="End"
+        style="@android:style/Theme.Translucent"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        android:layout_margin="20dp"
+        />
+
+
+
+
+</RelativeLayout>

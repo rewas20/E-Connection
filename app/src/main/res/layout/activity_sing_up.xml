@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingUpActivity">
+
+    <ImageView
+        android:id="@+id/imageView_singUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="400dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/loginaccount"/>
+
+    <TextView
+        android:id="@+id/create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView_singUp"
+        android:layout_alignLeft="@+id/imageView_singUp"
+        android:layout_alignTop="@+id/imageView_singUp"
+        android:layout_alignBottom="@+id/imageView_singUp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="70dp"
+        android:gravity="center_vertical"
+        android:text="Create\nAccount"
+        android:textSize="30dp"
+        android:textColor="@color/colorNumber"
+        android:textStyle="bold" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/check_login"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/imageView_singUp"
+        android:layout_alignRight="@+id/imageView_singUp"
+        android:layout_alignTop="@+id/imageView_singUp"
+        android:layout_alignBottom="@+id/imageView_singUp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:gravity="center_vertical"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/check_green"
+        android:visibility="invisible"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_singUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true">
+
+
+
+
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/effect_button_login"
+            android:text="Create"
+            android:textStyle="bold"
+            style="@android:style/Theme.Translucent"/>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_create"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="35dp"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_create_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="20dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/password_create"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Email"
+            android:paddingLeft="35dp"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_create_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textWebEmailAddress"
+                android:textSize="20dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/PhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/email_create"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Phone Number"
+            android:paddingLeft="35dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PhoneNumber_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:maxLength="14"
+                android:textSize="20dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_name_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/PhoneNumber"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:hint="User Name"
+            android:paddingLeft="35dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_name_create_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="20dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/email_create"
+            android:layout_alignStart="@+id/email_create"
+            android:layout_alignLeft="@id/email_create"
+            android:layout_alignTop="@id/email_create"
+            android:layout_alignBottom="@+id/email_create"
+            android:src="@drawable/email_account"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/password_create"
+            android:layout_alignStart="@+id/password_create"
+            android:layout_alignLeft="@id/password_create"
+            android:layout_alignTop="@id/password_create"
+            android:layout_alignBottom="@+id/password_create"
+            android:src="@drawable/lock_password"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/PhoneNumber"
+            android:layout_alignStart="@+id/PhoneNumber"
+            android:layout_alignLeft="@id/PhoneNumber"
+            android:layout_alignTop="@id/PhoneNumber"
+            android:layout_alignBottom="@+id/PhoneNumber"
+            android:src="@drawable/phone_number"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/user_name_create"
+            android:layout_alignStart="@+id/user_name_create"
+            android:layout_alignLeft="@id/user_name_create"
+            android:layout_alignTop="@id/user_name_create"
+            android:layout_alignBottom="@+id/user_name_create"
+            android:src="@drawable/user_name_create"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

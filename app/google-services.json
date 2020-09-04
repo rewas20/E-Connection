@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "284382838233",
+    "firebase_url": "https://e-connection-e60f8.firebaseio.com",
+    "project_id": "e-connection-e60f8",
+    "storage_bucket": "e-connection-e60f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284382838233:android:d7d5732c3cd5c7c37eedc8",
+        "android_client_info": {
+          "package_name": "epsilon.easyapps.e_connection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284382838233-8693ga25781dj699kvj9p1rv1hab95tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4miwRGHxJPVdCRC677nowdvLKyEy5YYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284382838233-8693ga25781dj699kvj9p1rv1hab95tn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

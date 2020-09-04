@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="270dp" android:layout_height="wrap_content"
+    android:background="@drawable/design_chose"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/chose_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Chose Card" />
+<RelativeLayout
+    android:id="@+id/credit_chose"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/chose_card"
+    android:background="@drawable/effect_button_sinup"
+    android:layout_margin="20dp"
+    android:padding="10dp"
+    android:clickable="true"
+    android:onClick="selectCard"
+    >
+    <TextView
+        android:id="@+id/Name_Card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Credit Card"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/Number_Card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Name_Card"
+        android:text="45** **** **** **21"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/icon_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+
+        android:src="@drawable/credit_card_create" />
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/debit_chose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/credit_chose"
+        android:background="@drawable/effect_button_sinup"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:clickable="true"
+        android:onClick="selectCard">
+        <TextView
+            android:id="@+id/Name_debit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:text="Debit Card"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/Number_debit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/Name_debit"
+            android:text="45** **** **** **55"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/icon_debit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginLeft="37dp"
+            android:src="@drawable/credit_card_create" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
